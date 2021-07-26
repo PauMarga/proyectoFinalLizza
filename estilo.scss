@@ -244,3 +244,49 @@ footer {
         padding: 2%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    #fotoLibro {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    .fotosFotolibro {
+        width: 400px;
+    }
+    section {
+        width: 450px;
+    }
+    #fotoUno{
+        width: 400px;
+        transform: none;
+        transition: none;
+    }
+    #fotoDos {
+        width: 400px;
+        transform: none;
+        transition: none;
+    }
+    #fotoTres {
+        width: 400px;
+        transform: none;
+        transition: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #fotoLibro {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    section {
+        width: 600px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #fotoLibro {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    section {
+        width: 1230px;
+    }
+}
