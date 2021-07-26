@@ -1,0 +1,246 @@
+$bgo: rgb(49, 47, 47);
+$bgc: grey;
+$color: honeydew;
+$hover: rgb(105, 97, 97);
+$g1: rgb(110, 109, 109);
+$g2: rgb(241, 233, 233);
+
+@mixin sectioninicio {
+    background-size: contain;
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $bgc;
+    text-align: center;
+    margin: 1em;
+}
+@mixin fotolibroFotos {
+    display: flex;
+    align-items: center;
+}
+@mixin fotolobroHistorias {
+    display: flex;
+    align-items: center;
+    border: solid $bgo;
+    padding: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $bgo;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5em;
+    header {
+        margin: 1em;
+        h1 {
+            background-color: $bgc;
+            text-align: center;
+            padding: 0.5em;
+        }
+        #paula {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2em;
+            width: 6em;
+            height: 1.5em;
+            text-align: left;
+            padding: 0.5em;
+            background-image: linear-gradient(to top, $g1, $g2);
+        }
+        nav {
+            font-size: 20px;
+            width: 80%;
+            text-align: center;
+            margin: 0% auto;
+            ul li {
+                color: $color;
+                text-align: center;
+                display: inline-block;
+                padding: 25px;
+                :hover {
+                    background-color: $hover;
+                    border-radius: 40%;
+                }
+                li {
+                    list-style: none;
+                }
+                a {
+                    text-decoration: none;
+                    color: $color;
+                }
+            }
+        }
+        .enlace {
+            color: $color;
+            animation-duration: 2s;
+            animation-name: enlace;
+            animation-iteration-count: infinite;
+            text-decoration: none;
+            @keyframes enlace {
+                0% {
+                    opacity: 0;
+                    }
+                50% {
+                    opacity: 1;
+                    }
+                100% {
+                  opacity: 0;
+                    }
+            }
+        }
+    }
+    section {
+        align-content: center;
+        background-color: $bgc;
+        width: 1230px;
+        text-align: center;
+        margin: 1em;
+        .galeria {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        a {
+            color: $bgo;
+            text-decoration: none;
+            margin: 1%;
+            padding: 2%;
+        }
+        h1 {
+            margin: 1%;
+            padding: 2%;
+        }
+        
+    }
+    .sectionUno {
+        @include sectioninicio
+        background-image: url(galeria/catrina.jpg);
+    }
+    .sectionDos {
+        @include sectioninicio
+        background-image: url(galeria/alma.jpg);
+    }
+    .sectionTres {
+        @include sectioninicio
+        background-image: url(galeria/surf.jpg);
+    }
+    .sectionCuatro {
+        @include sectioninicio()
+        background-image: url(galeria/tango.jpg);
+    }
+    #pequeñas {
+        background-color: $bgc;
+        margin: 1em;
+        align-content: center;
+        text-align: center;
+        .fotosPequeñas {
+            width: 200px;
+        }
+    }
+    img {
+        margin: 1%;
+        border-radius: 20%;
+        width: 500px;
+        transition: transform 2s ease;
+    }
+    img:hover {
+        transform: scale(1.3, 1.3);
+    }
+    #escritoAMano {
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 2em;
+        background-color: $bgc;
+        text-align: center;
+        margin: 1em;
+        img {
+            width: 200px;
+        }
+    }
+    .instagram {
+        color: $color;
+    }
+    .listaFotos {
+        display: list-item;
+        text-align: left;
+        list-style-type:disc;
+        padding: 5px;
+        font-size: 16px;
+        :hover {
+            padding: 1%;
+        }
+    }
+    #fotoLibro {
+        width: 92%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 5px;
+        margin: 2%;
+        padding: 2%;
+        justify-items: center;
+        .fotosFotolibro {
+            width: 500px;
+        }
+        .fotoBarbijo {
+            @include fotolibroFotos
+        }
+        .espejoNiza {
+            @include fotolibroFotos
+        }
+        .pajaros {
+            @include fotolibroFotos
+        }
+        .puertoMadero {
+            @include fotolibroFotos
+        }
+        .lisa {
+            @include fotolibroFotos
+        }
+        .historia1 {
+            @include fotolobroHistorias
+        }
+        .historia2 {
+            @include fotolobroHistorias
+        }
+        .historia3 {
+            @include fotolobroHistorias
+        }
+        .historia4 {
+            @include fotolobroHistorias
+        }
+        .historia5 {
+            @include fotolobroHistorias
+        }
+    }
+    #concurso {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        #fotoUno {
+            width: 850px;
+        }
+        #fotoDos {
+            width: 800px;
+        }
+        #fotoTres {
+            width: 800px;            
+        }
+    }
+}
+footer {
+    h6 {
+        color: $bgc;
+    }
+    a {
+        color: $color;
+        text-decoration: none;
+        margin: 1%;
+        padding: 2%;
+    }
+}
