@@ -374,45 +374,34 @@ body #concurso #fotoTres {
   width: 800px;
 }
 
-footer h6 {
-  color: grey;
-}
-
-footer a {
-  color: honeydew;
-  text-decoration: none;
-  margin: 1%;
-  padding: 2%;
-}
-
 @media screen and (max-width: 768px) {
-  #fotoLibro {
+  body #fotoLibro {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[10];
         grid-template-rows: repeat(10, 1fr);
   }
-  .fotosFotolibro {
+  body .fotosFotolibro {
     width: 400px;
   }
-  section {
+  body section {
     width: 450px;
   }
-  #fotoUno {
+  body #fotoUno {
     width: 400px;
     -webkit-transform: none;
             transform: none;
     -webkit-transition: none;
     transition: none;
   }
-  #fotoDos {
+  body #fotoDos {
     width: 400px;
     -webkit-transform: none;
             transform: none;
     -webkit-transition: none;
     transition: none;
   }
-  #fotoTres {
+  body #fotoTres {
     width: 400px;
     -webkit-transform: none;
             transform: none;
@@ -422,26 +411,37 @@ footer a {
 }
 
 @media screen and (min-width: 768px) {
-  #fotoLibro {
+  body #fotoLibro {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[10];
         grid-template-rows: repeat(10, 1fr);
   }
-  section {
+  body section {
     width: 600px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #fotoLibro {
+  body #fotoLibro {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
   }
-  section {
+  body section {
     width: 1230px;
   }
+}
+
+footer h6 {
+  color: grey;
+}
+
+footer a {
+  color: honeydew;
+  text-decoration: none;
+  margin: 1%;
+  padding: 2%;
 }
 /*# sourceMappingURL=estilo.css.map */
