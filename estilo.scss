@@ -232,10 +232,18 @@ body {
             grid-template-rows: repeat(10, 1fr);
         }
         .fotosFotolibro {
-            width: 400px;
+            width: 300px;
         }
         section {
             width: 450px;
+        }
+        #concurso {
+            img {
+                width: 400px;
+            }
+        }
+        img {
+            width: 400px;
         }
     }
     @media screen and (min-width: 768px) {
@@ -246,6 +254,14 @@ body {
         section {
             width: 600px;
         }
+        #concurso {
+            img {
+                width: 600px;
+            }
+        }
+        img {
+            width: 450px;
+        }
     }
     @media screen and (min-width: 1024px) {
         #fotoLibro {
@@ -254,6 +270,14 @@ body {
         }
         section {
             width: 1230px;
+        }
+        #concurso {
+            img {
+                width: 600px;
+            }
+        }
+        img {
+            width: 500px;
         }
     }
 }
