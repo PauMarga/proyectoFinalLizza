@@ -373,8 +373,11 @@ body #concurso img {
     -ms-grid-rows: (1fr)[10];
         grid-template-rows: repeat(10, 1fr);
   }
-  body .fotosFotolibro {
-    width: 300px;
+  body #fotoLibro .fotosFotolibro {
+    width: 350px;
+  }
+  body #fotoLibro p {
+    font-size: 15px;
   }
   body section {
     width: 400px;
@@ -394,14 +397,20 @@ body #concurso img {
     -ms-grid-rows: (1fr)[10];
         grid-template-rows: repeat(10, 1fr);
   }
+  body #fotoLibro .fotosFotolibro {
+    width: 400px;
+  }
+  body #fotoLibro p {
+    font-size: 15px;
+  }
   body section {
     width: 600px;
   }
   body #concurso img {
-    width: 600px;
+    width: 450px;
   }
   body img {
-    width: 450px;
+    width: 400px;
   }
 }
 
@@ -411,6 +420,12 @@ body #concurso img {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
+  }
+  body #fotoLibro .fotosFotolibro {
+    width: 500px;
+  }
+  body #fotoLibro p {
+    font-size: 15px;
   }
   body section {
     width: 1230px;

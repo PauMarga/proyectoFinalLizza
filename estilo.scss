@@ -230,9 +230,12 @@ body {
         #fotoLibro {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(10, 1fr);
-        }
-        .fotosFotolibro {
-            width: 300px;
+            .fotosFotolibro {
+                width: 350px;
+            }
+            p {
+                font-size: 15px;
+            }
         }
         section {
             width: 400px;
@@ -250,23 +253,35 @@ body {
         #fotoLibro {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(10, 1fr);
+            .fotosFotolibro {
+                width: 400px;
+            }
+            p {
+                font-size: 15px;
+            }
         }
         section {
             width: 600px;
         }
         #concurso {
             img {
-                width: 600px;
+                width: 450px;
             }
         }
         img {
-            width: 450px;
+            width: 400px;
         }
     }
     @media screen and (min-width: 1024px) {
         #fotoLibro {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(5, 1fr);
+            .fotosFotolibro {
+                width: 500px;
+            }
+            p {
+                font-size: 15px;
+            }
         }
         section {
             width: 1230px;
