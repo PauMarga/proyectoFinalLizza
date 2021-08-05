@@ -362,16 +362,8 @@ body #concurso {
           justify-content: center;
 }
 
-body #concurso #fotoUno {
-  width: 850px;
-}
-
-body #concurso #fotoDos {
-  width: 800px;
-}
-
-body #concurso #fotoTres {
-  width: 800px;
+body #concurso img {
+  width: 700px;
 }
 
 @media screen and (max-width: 768px) {
@@ -386,27 +378,6 @@ body #concurso #fotoTres {
   }
   body section {
     width: 450px;
-  }
-  body #fotoUno {
-    width: 400px;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
-    transition: none;
-  }
-  body #fotoDos {
-    width: 400px;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
-    transition: none;
-  }
-  body #fotoTres {
-    width: 400px;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
-    transition: none;
   }
 }
 

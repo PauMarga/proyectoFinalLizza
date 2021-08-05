@@ -222,14 +222,8 @@ body {
         text-align: center;
         align-items: center;
         justify-content: center;
-        #fotoUno {
-            width: 850px;
-        }
-        #fotoDos {
-            width: 800px;
-        }
-        #fotoTres {
-            width: 800px;            
+        img {
+            width: 700px;
         }
     }
     @media screen and (max-width: 768px) {
@@ -242,21 +236,6 @@ body {
         }
         section {
             width: 450px;
-        }
-        #fotoUno{
-            width: 400px;
-            transform: none;
-            transition: none;
-        }
-        #fotoDos {
-            width: 400px;
-            transform: none;
-            transition: none;
-        }
-        #fotoTres {
-            width: 400px;
-            transform: none;
-            transition: none;
         }
     }
     @media screen and (min-width: 768px) {
